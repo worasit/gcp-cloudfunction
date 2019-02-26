@@ -1,0 +1,61 @@
+{
+  "kind": "storage#object",
+  "id": string,
+  "selfLink": string,
+  "name": string,
+  "bucket": string,
+  "generation": long,
+  "metageneration": long,
+  "contentType": string,
+  "timeCreated": datetime,
+  "updated": datetime,
+  "timeDeleted": datetime,
+  "temporaryHold": boolean,
+  "eventBasedHold": boolean,
+  "retentionExpirationTime": datetime,
+  "storageClass": string,
+  "timeStorageClassUpdated": datetime,
+  "size": unsigned
+  long,
+  "md5Hash": string,
+  "mediaLink": string,
+  "contentEncoding": string,
+  "contentDisposition": string,
+  "contentLanguage": string,
+  "cacheControl": string,
+  "metadata": {
+    (key): string
+  },
+  "acl": [
+    {
+      "kind": "storage#objectAccessControl",
+      "id": string,
+      "selfLink": string,
+      "bucket": string,
+      "object": string,
+      "generation": long,
+      "entity": string,
+      "role": string,
+      "email": string,
+      "entityId": string,
+      "domain": string,
+      "projectTeam": {
+        "projectNumber": string,
+        "team": string
+      },
+      "etag": string
+    }
+  ],
+  "owner": {
+    "entity": string,
+    "entityId": string
+  },
+  "crc32c": string,
+  "componentCount": integer,
+  "etag": string,
+  "customerEncryption": {
+    "encryptionAlgorithm": string,
+    "keySha256": string
+  },
+  "kmsKeyName": string
+}
